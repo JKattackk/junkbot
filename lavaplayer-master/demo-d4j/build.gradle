@@ -1,0 +1,27 @@
+plugins {
+  id 'java'
+  id 'application'
+  id 'idea'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+  jcenter()
+  maven {
+    url 'https://jitpack.io'
+  }
+}
+
+ext.logbackVersion = '1.1.8'
+
+dependencies {
+  compile 'com.github.austinv11:Discord4j:2.7.0'
+  compile 'com.sedmelluq:lavaplayer:1.2.12'
+
+  runtime "ch.qos.logback:logback-classic:$logbackVersion"
+  runtime "ch.qos.logback:logback-core:$logbackVersion"
+}
+
+mainClassName = 'com.sedmelluq.discord.lavaplayer.demo.d4j.Main'
