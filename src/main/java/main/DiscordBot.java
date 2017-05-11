@@ -21,7 +21,7 @@ public class DiscordBot
         try
         {
             JDA jda = new JDABuilder(AccountType.BOT)
-                    .setToken("MjgxOTA3MDI1NDM5NjIxMTIw.C4-nlw.sZq5LlpD4bbv-Sk-jAXmn2Qm4pk")
+                    .setToken("boi")
                     .addListener(new MessageListenerExample())
                     .buildBlocking();
         }
